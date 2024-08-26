@@ -174,7 +174,7 @@ class Update {
             // WordPress Notice letting the admin know rewrite rules should be flushed
         } else {
             // On non-large networks flush the rules by deleting the rewrite rules option
-            delete_option('rewrite_rules');
+            //delete_option('rewrite_rules');
         }
 
         do_action('cla_blocks_update_single_site');
