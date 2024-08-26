@@ -177,7 +177,7 @@ class Update {
             delete_option('rewrite_rules');
         }
 
-        do_action('wpca_update_single_site');
+        do_action('cla_blocks_update_single_site');
     }
 
 

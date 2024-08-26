@@ -36,7 +36,7 @@ class CLA_Blocks {
 		$this->prefix = 'cla_blocks_';
 		$this->textdomain = 'cla-blocks';
 		$this->uri = plugins_url('/', __DIR__);
-		$this->version = '0.0.0cla-blocks';		
+		$this->version = '0.0.0cla-blocks';
 
 		// Load files
 		$this->load();

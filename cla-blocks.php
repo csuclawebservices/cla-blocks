@@ -5,7 +5,7 @@
  * Description:			All CLA gutenberg project resources, such as blocks, components, and utility functions that are brand agnostic.
  * Requires at least:	6.5
  * Requires PHP:		8.1
- * Version:				0.1.0
+ * Version:				0.1.1
  * Author:				CLA Web Team
  * License:				GPL-2.0-or-later
  * License URI:			https://www.gnu.org/licenses/gpl-2.0.html
