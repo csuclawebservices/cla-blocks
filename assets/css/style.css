@@ -1,0 +1,29 @@
+:root {
+	--cla-blocks--color--cta-text: #1E4D2B;
+	--cla-blocks--color--cta-background: #C8C372;
+	--cla-blocks--color--cta-text-hover: #C8C372;
+	--cla-blocks--color--cta-background-hover: #1E4D2B;
+
+	--cla-blocks--color--primary: #1E4D2B;
+	--cla-blocks--color--secondary: #59595B;
+	--cla-blocks--color--accent: #D9782D;
+
+	--cla-blocks--color--neutral-1: #000000;
+	--cla-blocks--color--neutral-2: #ffffff;
+	--cla-blocks--color--neutral-3: #59595B;
+	--cla-blocks--color--neutral-4: #CCCCCC;
+	--cla-blocks--color--neutral-5: #E3CDB1;
+
+	--cla-blocks--color--extra-1: #C8C372;
+	--cla-blocks--color--extra-2: #C8C372;
+	--cla-blocks--color--extra-3: #C8C372;
+	--cla-blocks--color--extra-4: #C8C372;
+	--cla-blocks--color--extra-5: #C8C372;
+	--cla-blocks--color--extra-6: #C8C372;
+	--cla-blocks--color--extra-7: #C8C372;
+	--cla-blocks--color--extra-8: #C8C372;
+
+
+
+	--cla-blocks--spacing--gap: var(--wp--style--block-gap, 30px);
+}

@@ -1,0 +1,22 @@
+.cla-blocks-editor-block-image {
+	position: relative;
+}
+.cla-blocks-editor-block-image .components-responsive-wrapper img {
+	object-fit: contain;
+}
+.cla-blocks-editor-block-image__actions {
+	position: absolute;
+	bottom: 0;
+	padding: 8px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 8px;
+	opacity: 0;
+	box-sizing: border-box;
+}
+.cla-blocks-editor-block-image:hover .cla-blocks-editor-block-image__actions {
+	opacity: 1;
+}

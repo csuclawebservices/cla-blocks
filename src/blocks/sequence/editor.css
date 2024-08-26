@@ -1,0 +1,11 @@
+.cla-blocks-sequence > .block-editor-inner-blocks {
+	width: 100%;
+}
+.cla-blocks-sequence > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+}
+.cla-blocks-sequence > .block-editor-inner-blocks > .block-editor-block-list__layout .block-list-appender {
+	bottom: var(--cla-blocks-sequence-offset);
+}

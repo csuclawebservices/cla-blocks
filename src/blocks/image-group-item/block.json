@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cla-blocks/image-group-item",
+	"version": "0.1.0",
+	"title": "Image Group Item",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A responsive image with accompanying content to be used in the Image Group block.",
+	"example": {},
+	"supports": {
+		"align": false,
+		"color": {
+			"background": false,
+			"heading": true,
+			"link": true,
+			"text": true
+		},
+		"dimensions": {
+			"aspectRatio": true
+		},
+		"html": false
+	},
+	"selectors": {
+		"dimensions": {
+			"aspectRatio": ".cla-blocks-image-group-item__media"
+		}
+	},
+	"textdomain": "cla-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"allowedBlocks": [
+		"core/group",
+		"core/columns",
+		"core/heading",
+		"core/paragraph",
+		"core/list",
+		"core/buttons",
+		"core/image",
+		"core/video"
+	],
+	"parent": ["cla-blocks/image-group"],
+	"attributes": {
+		"mediaId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaUrl": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}

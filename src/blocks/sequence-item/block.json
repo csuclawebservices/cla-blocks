@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cla-blocks/sequence-item",
+	"version": "0.1.0",
+	"title": "Sequence Item",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A responsive sequence item to be used in the sequence block.",
+	"example": {},
+	"supports": {
+		"align": false,
+		"color": {
+			"background": false,
+			"heading": true,
+			"link": true,
+			"text": true
+		},
+		"html": false
+	},
+	"textdomain": "cla-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"allowedBlocks": [
+		"core/group",
+		"core/columns",
+		"core/heading",
+		"core/paragraph",
+		"core/list",
+		"core/buttons",
+		"core/image",
+		"core/video"
+	],
+	"parent": ["cla-blocks/sequence"],
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"titleHeadingLevel": {
+			"type": "number",
+			"default": 2
+		}
+	}
+}

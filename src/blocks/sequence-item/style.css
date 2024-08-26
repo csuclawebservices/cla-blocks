@@ -1,0 +1,8 @@
+.cla-blocks-sequence-item-container {
+	container-name: cla-blocks-sequence-item-container;
+	container-type: inline-size;
+}
+.cla-blocks-sequence-item {
+	display: flex;
+	flex-direction: column;
+}

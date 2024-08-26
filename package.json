@@ -1,0 +1,17 @@
+{
+	"name": "cla-blocks",
+	"version": "0.1.0",
+	"description": "All CLA gutenberg project resources, such as blocks, components, and utility functions that are brand agnostic.",
+	"author": "CLA Web Team",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --webpack-src-dir=src/blocks --output-path=includes/blocks",
+		"start": "wp-scripts start --webpack-copy-php --webpack-src-dir=src/blocks --output-path=includes/blocks"
+	},
+	"devDependencies": {
+		"@wordpress/babel-preset-default": "^8.2.0",
+		"@wordpress/dependency-extraction-webpack-plugin": "^6.2.0",
+		"@wordpress/icons": "^10.2.0",
+		"@wordpress/scripts": "^28.3.0"
+	}
+}
