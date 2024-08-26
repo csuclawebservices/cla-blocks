@@ -143,7 +143,7 @@ class Update {
         ));
 
         foreach ($sites as $blog) {
-            switch_to_blog($blog['blog_id']);
+            switch_to_blog($blog->blog_id);
 
             $this->update_single_site($installed_version);
 
