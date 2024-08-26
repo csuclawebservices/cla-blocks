@@ -3,7 +3,7 @@
  * Plugin Name:			CLA Blocks
  * Plugin URI: 			https://it.libarts.colostate.edu/web/
  * Description:			All CLA gutenberg project resources, such as blocks, components, and utility functions that are brand agnostic.
- * Requires at least:	6.5
+ * Requires at least:	6.6
  * Requires PHP:		8.1
  * Version:				0.1.1
  * Author:				CLA Web Team

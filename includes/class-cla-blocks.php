@@ -32,7 +32,7 @@ class CLA_Blocks {
 		// Initialize properties
 		$this->dir = plugin_dir_path(__DIR__);
 		$this->min_php_version = '8.1';
-		$this->min_wp_version = '6.5';
+		$this->min_wp_version = '6.6';
 		$this->prefix = 'cla_blocks_';
 		$this->textdomain = 'cla-blocks';
 		$this->uri = plugins_url('/', __DIR__);
