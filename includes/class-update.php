@@ -142,8 +142,8 @@ class Update {
             'limit' => 10000
         ));
 
-        foreach ($sites as $blog) {
-            switch_to_blog($blog->blog_id);
+        foreach ($sites as $site) {
+            switch_to_blog($site->id);
 
             $this->update_single_site($installed_version);
 
@@ -165,12 +165,12 @@ class Update {
      */
     protected function update_single_site($installed_version) {
         // Do updates
-        if (version_compare($installed_version, '0.1.0', '<')) {
-			$this->v_0_1_0();
+        if (version_compare($installed_version, '0.1.1', '<')) {
+			$this->v_0_1_1();
 		}
 
         // Flush the rewrite rules
-        if (wp_is_large_network()) {
+        if (is_multisite() && wp_is_large_network()) {
             // WordPress Notice letting the admin know rewrite rules should be flushed
         } else {
             // On non-large networks flush the rules by deleting the rewrite rules option
@@ -182,7 +182,7 @@ class Update {
 
 
 
-    protected function v_0_1_0() {
+    protected function v_0_1_1() {
         // Initial release update / init - not needed but here for future use
     }
 }
