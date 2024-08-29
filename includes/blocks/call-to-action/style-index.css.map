@@ -1,1 +1,0 @@
-{"version":3,"file":"call-to-action/style-index.css","mappings":";;;AAAA;CACC,WAAW;CACX,YAAY;AACb,C","sources":["webpack://cla-blocks/./src/blocks/call-to-action/style.css"],"sourcesContent":[".cla-blocks-call-to-action__media {\n\twidth: 100%;\n\theight: auto;\n}"],"names":[],"sourceRoot":""}

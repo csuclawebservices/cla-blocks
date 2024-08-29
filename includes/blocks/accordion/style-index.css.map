@@ -1,1 +1,0 @@
-{"version":3,"file":"accordion/style-index.css","mappings":";;;AAAA;CACC,wCAAwC;AACzC,C","sources":["webpack://cla-blocks/./src/blocks/accordion/style.css"],"sourcesContent":[".cla-blocks-accordion-container:where(.has-background, .alignfull) .cla-blocks-accordion {\n\tpadding: var(--cla-blocks--spacing--gap);\n}"],"names":[],"sourceRoot":""}

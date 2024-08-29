@@ -1,1 +1,0 @@
-{"version":3,"file":"image-group-item/style-index.css","mappings":";;;AAAA;CACC,WAAW;CACX,YAAY;CACZ,oBAAiB;IAAjB,iBAAiB;AAClB,C","sources":["webpack://cla-blocks/./src/blocks/image-group-item/style.css"],"sourcesContent":[".cla-blocks-image-group-item__media {\n\twidth: 100%;\n\theight: auto;\n\tobject-fit: cover;\n}"],"names":[],"sourceRoot":""}
