@@ -1,7 +1,7 @@
 import { __ } from '@wordpress/i18n';
 import { BlockControls, InnerBlocks, InspectorControls, MediaUpload, MediaUploadCheck, URLInput, URLInputButton, URLPopover, useBlockProps } from '@wordpress/block-editor';
 import { __experimentalHeading as Heading, Button, PanelBody, ResponsiveWrapper, TextControl, ToggleControl, ToolbarGroup } from '@wordpress/components';
-import { RichTextHeading } from '../../components/richtext-heading/richtext-heading.js';
+import { RichTextHeading } from '../../components/richtext-heading/richtext-heading';
 
 import './editor.css';
 

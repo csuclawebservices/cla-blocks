@@ -204,7 +204,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_richtext_heading_richtext_heading_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/richtext-heading/richtext-heading.js */ "./src/components/richtext-heading/richtext-heading.js");
+/* harmony import */ var _components_richtext_heading_richtext_heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/richtext-heading/richtext-heading */ "./src/components/richtext-heading/richtext-heading.js");
 /* harmony import */ var _editor_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.css */ "./src/blocks/sequence-item/editor.css");
 /* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./block.json */ "./src/blocks/sequence-item/block.json");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
@@ -228,7 +228,7 @@ function Edit(props) {
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
       className: "cla-blocks-sequence-item",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_richtext_heading_richtext_heading_js__WEBPACK_IMPORTED_MODULE_3__.RichTextHeading, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_richtext_heading_richtext_heading__WEBPACK_IMPORTED_MODULE_3__.RichTextHeading, {
         className: "cla-blocks-sequence-item__title",
         value: props.attributes.title,
         headingLevel: props.attributes.titleHeadingLevel,
