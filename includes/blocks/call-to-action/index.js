@@ -92,9 +92,16 @@ const BlockEdit = props => {
           allowedBlocks: props.attributes.allowedBlocks,
           template: [['core/heading', {
             fontSize: "300",
+            level: 3,
             lock: {
               move: true,
               remove: true
+            },
+            style: {
+              typography: {
+                fontStyle: "normal",
+                fontWeight: "700"
+              }
             }
           }], ['core/paragraph', {}]]
         }), attributes.url != "" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
@@ -371,7 +378,7 @@ module.exports = window["wp"]["i18n"];
   \**********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"cla-blocks/call-to-action","version":"0.1.0","title":"Call to Action","category":"theme","icon":"smiley","description":"A responsive Call to Action block that suppoorts an optional image and multiple block types for the content.","example":{},"supports":{"align":["wide","full"],"color":{"background":true},"html":false},"textdomain":"cla-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","allowedBlocks":["core/heading","core/paragraph","core/list","core/buttons"],"attributes":{"mediaId":{"type":"number","default":0},"mediaUrl":{"type":"string","default":""},"url":{"type":"string","default":""},"urlLabel":{"type":"string","default":""}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"cla-blocks/call-to-action","version":"0.1.0","title":"Call to Action","category":"theme","icon":"smiley","description":"A responsive Call to Action block that suppoorts an optional image and multiple block types for the content.","example":{},"supports":{"align":["wide","full"],"color":{"text":true,"heading":true,"link":true,"background":true},"html":false},"textdomain":"cla-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","allowedBlocks":["core/heading","core/paragraph","core/list","core/buttons"],"attributes":{"mediaId":{"type":"number","default":0},"mediaUrl":{"type":"string","default":""},"url":{"type":"string","default":""},"urlLabel":{"type":"string","default":""}}}');
 
 /***/ })
 

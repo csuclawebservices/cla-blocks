@@ -35,7 +35,7 @@ const BlockEdit = (props) => {
 					</figure>
 				}
 				<div className="cla-blocks-call-to-action__content">
-					<InnerBlocks allowedBlocks={props.attributes.allowedBlocks} template={[['core/heading', {fontSize: "300", lock: {move: true, remove: true}}], ['core/paragraph', {}]]}/>
+					<InnerBlocks allowedBlocks={props.attributes.allowedBlocks} template={[['core/heading', {fontSize: "300", level: 3, lock: {move: true, remove: true}, style: {typography: {fontStyle: "normal", fontWeight: "700"}}}], ['core/paragraph', {}]]}/>
 					{attributes.url != "" && 
 						<div className="wp-block-button cla-blocks-call-to-action__link">
 							<div className="wp-block-button__link">{attributes.urlLabel}</div>

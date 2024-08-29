@@ -11,6 +11,9 @@
 	"supports": {
 		"align": ["wide", "full"],
 		"color": {
+			"text": true,
+			"heading": true,
+			"link": true,
 			"background": true
 		},
 		"html": false
