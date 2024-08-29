@@ -1,0 +1,3 @@
+.cla-blocks-accordion-container:where(.has-background, .alignfull) .cla-blocks-accordion {
+	padding: var(--cla-blocks--spacing--gap);
+}

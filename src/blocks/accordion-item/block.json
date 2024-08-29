@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cla-blocks/accordion-item",
+	"version": "0.1.0",
+	"title": "Accordion Item",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "A responsive accordion item that allows for several blocks types as content to be used in the Accordion block.",
+	"example": {},
+	"supports": {
+		"align": false,
+		"color": {
+			"background": false,
+			"button": false,
+			"heading": false,
+			"link": false,
+			"text": false
+		},
+		"html": false
+	},
+	"textdomain": "cla-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"allowedBlocks": [
+		"core/group",
+		"core/columns",
+		"core/heading",
+		"core/paragraph",
+		"core/list",
+		"core/buttons",
+		"core/image",
+		"core/video"
+	],
+	"parent": ["cla-blocks/accordion"],
+	"attributes": {
+		"id": {
+			"type": "string",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"titleHeadingLevel": {
+			"type": "number",
+			"default": 3
+		},
+		"expanded": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}
