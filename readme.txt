@@ -14,8 +14,14 @@ All blocks are created with only functionality in mind so that they can be used 
 
 == Changelog ==
 
+= 0.2.0 =
+* Added: Accordion and Accordion Item blocks
+* Added: Text and Heading color "supports" to the cla-blocks/call-to-action block
+* Updated: cla-blocks/call-to-action and cla-blocks/image-group-item image rendering to include multiple attributes (including alt and srcset)
+* Updated: InnerBlocks template for the cla-blocks/call-to-action and cla-blocks/image-group-item blocks to set default font size and weight
+
 = 0.1.1 =
-* Fixed an error in the Update class caused by the update_multisite method
+* Fixed: An error in the Update class caused by the update_multisite method
 
 = 0.1.0 =
 * Release
