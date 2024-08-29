@@ -28,10 +28,10 @@ class Image_Group_Item extends \cla_blocks\includes\Block {
 		if (!empty($attributes['mediaId'])) {
 			$classes[] = 'has-image';
 
-			$image_attributes = wp_get_attachment_image_src($attributes['mediaId'], 'large');
+			$image_markup = wp_get_attachment_image($attributes['mediaId'], 'large', false, array('class' => $this->base_class . '__media'));
 
-			if ($image_attributes) {
-				$image = '<figure class="' . $this->base_class . '__media-container"><img class="' . $this->base_class . '__media" src="' . $image_attributes[0] . '" /></figure>';
+			if (!empty($image_markup)) {
+				$image = '<figure class="' . $this->base_class . '__media-container">' . $image_markup . '</figure>';
 			}
 		} else {
 			$classes[] = 'no-image';

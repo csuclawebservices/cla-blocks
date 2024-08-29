@@ -90,7 +90,14 @@ function Edit(props) {
           template: [['core/heading', {
             content: 'Title',
             level: 3,
-            fontFamily: "serif-1"
+            fontFamily: "serif-1",
+            fontSize: "300",
+            style: {
+              typography: {
+                fontStyle: "normal",
+                fontWeight: "400"
+              }
+            }
           }], ['core/paragraph', {
             placeholder: 'Content...'
           }]]

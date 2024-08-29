@@ -35,7 +35,7 @@ export default function Edit(props) {
 					/>
 				}
 				<div className="cla-blocks-image-group-item__content">
-					<InnerBlocks allowedBlocks={props.attributes.allowedBlocks} template={[['core/heading', {content: 'Title', level: 3, fontFamily: "serif-1"}], ['core/paragraph', {placeholder: 'Content...'}]]}/>
+					<InnerBlocks allowedBlocks={props.attributes.allowedBlocks} template={[['core/heading', {content: 'Title', level: 3, fontFamily: "serif-1", fontSize: "300", style: {typography: {fontStyle: "normal", fontWeight: "400"}}}], ['core/paragraph', {placeholder: 'Content...'}]]}/>
 				</div>
 			</div>
 		</div>
