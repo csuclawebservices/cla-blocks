@@ -2,3 +2,9 @@
 	width: 100%;
 	height: auto;
 }
+.cla-blocks-call-to-action__content :first-child {
+	margin-block-start: 0;
+}
+.cla-blocks-call-to-action__content :last-child {
+	margin-block-end: 0;
+}
