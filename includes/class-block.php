@@ -105,6 +105,35 @@ abstract class Block implements interfaces\Block {
 
 
 	/**
+	 * Converts internal representation of variables to css custom property representations.
+	 * 
+	 * @see WP_Theme_JSON::convert_custom_properties
+	 * 
+	 * @since 0.3.0
+	 * 
+	 * @param string $value	The variable such as var:preset|color|name to convert.
+	 * @return string
+	 */
+	protected function convert_custom_properties( $value ) {
+		$prefix     = 'var:';
+		$prefix_len = strlen( $prefix );
+		$token_in   = '|';
+		$token_out  = '--';
+		if ( str_starts_with( $value, $prefix ) ) {
+			$unwrapped_name = str_replace(
+				$token_in,
+				$token_out,
+				substr( $value, $prefix_len )
+			);
+			$value          = "var(--wp--$unwrapped_name)";
+		}
+
+		return $value;
+	}
+
+
+
+	/**
 	 * Enqueues the blocks assets for the editor and view
 	 * 
 	 * @since 0.1.0
