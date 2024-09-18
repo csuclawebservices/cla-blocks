@@ -46,7 +46,7 @@ class Accordion_Item extends \cla_blocks\includes\Block {
 		?>
 		<div class="<?php echo $this->base_class; ?>">
 			<?php echo $title; ?>
-			<div id="<?php echo $this->base_class . '__content-' . $id; ?>" class="<?php echo $this->base_class; ?>__content" aria-labelledby="<?php echo $this->base_class . '__button-heading-' . $id; ?>">
+			<div id="<?php echo $this->base_class . '__content-' . $id; ?>" class="<?php echo $this->base_class; ?>__content" aria-labelledby="<?php echo $this->base_class . '__button-heading-' . $id; ?>" role="region">
 				<?php echo $content; ?>
 			</div>
 		</div><?php

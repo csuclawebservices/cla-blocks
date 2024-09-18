@@ -1,1 +1,12 @@
-.cla-blocks-image-group>.block-editor-inner-blocks>.block-editor-block-list__layout{--cla-blocks-image-group-max-columns:4;--cla-blocks-image-group-min-column-width:calc((var(--wp--style--global--content-size) - ((var(--cla-blocks--spacing--gap) + 1px)*(var(--cla-blocks-image-group-max-columns) - 1)))/var(--cla-blocks-image-group-max-columns));display:grid;gap:var(--cla-blocks--spacing--gap);grid-template-columns:repeat(auto-fit,minmax(var(--cla-blocks-image-group-min-column-width),1fr))}
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/image-group/editor.css ***!
+  \***************************************************************************************************************************************************************************************/
+.cla-blocks-image-group > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	--cla-blocks-image-group-max-columns: 4;
+	--cla-blocks-image-group-min-column-width: calc((var(--wp--style--global--content-size) - ((var(--cla-blocks--spacing--gap) + 1px) * (var(--cla-blocks-image-group-max-columns) - 1))) / var(--cla-blocks-image-group-max-columns));
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(var(--cla-blocks-image-group-min-column-width), 1fr));
+	gap: var(--cla-blocks--spacing--gap);
+}
+
+/*# sourceMappingURL=index.css.map*/
