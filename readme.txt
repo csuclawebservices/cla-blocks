@@ -14,6 +14,15 @@ All blocks are created with only functionality in mind so that they can be used 
 
 == Changelog ==
 
+= 0.3.0 =
+* Added: cla-blocks/heading-group block so that multiple core/paragraph blocks (with varying styles) can be used to create a single heading text
+* Added: A new HeadingLevelDropdownMenu React component used to add 1-line heading level dropdown menus to custom blocks
+* Updated: The RichTextHeading React component to use the HeadingLevelDropdownMenu component
+* Updated: cla-blocks/accordion-item CSS so the cursor is the pointer when focusing/hovering the accordion-item heading/button
+* Updated: cla-blocks/call-to-action CSS to remove the top/bottom margin from the content container
+* Fixed: cla-blocks/accordion-item to add role="region" to the content div so that the aria-labelledby can be used
+* Fixed: build configuration so the plugin version is current
+
 = 0.2.0 =
 * Added: Accordion and Accordion Item blocks
 * Added: Text and Heading color "supports" to the cla-blocks/call-to-action block
