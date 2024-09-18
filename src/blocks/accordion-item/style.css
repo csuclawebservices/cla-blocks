@@ -8,6 +8,10 @@
 	color: inherit;
 	background: none;
 }
+.cla-blocks-accordion-item__button:focus,
+.cla-blocks-accordion-item__button:hover {
+	cursor: pointer;
+}
 .cla-blocks-accordion-item__button-heading {
 	text-align: left;
 }
