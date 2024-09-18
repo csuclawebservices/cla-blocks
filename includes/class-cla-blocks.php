@@ -152,6 +152,7 @@ class CLA_Blocks {
 		require_once $this->dir . 'includes/blocks/accordion/block.php';
 		require_once $this->dir . 'includes/blocks/accordion-item/block.php';
 		require_once $this->dir . 'includes/blocks/call-to-action/block.php';
+		require_once $this->dir . 'includes/blocks/heading-group/block.php';
 		require_once $this->dir . 'includes/blocks/image-group/block.php';
 		require_once $this->dir . 'includes/blocks/image-group-item/block.php';
 		require_once $this->dir . 'includes/blocks/sequence/block.php';
@@ -161,6 +162,7 @@ class CLA_Blocks {
 		$this->blocks['cla-blocks/accordion'] = new blocks\accordion\Accordion(array('blocks_dir_path' => $blocks_dir_path, 'blocks_dir_uri' => $blocks_dir_uri, 'prefix' => $this->prefix, 'textdomain' => $this->textdomain));
 		$this->blocks['cla-blocks/accordion-item'] = new blocks\accordion_item\Accordion_Item(array('blocks_dir_path' => $blocks_dir_path, 'blocks_dir_uri' => $blocks_dir_uri, 'prefix' => $this->prefix, 'textdomain' => $this->textdomain));
 		$this->blocks['cla-blocks/call-to-action'] = new blocks\call_to_action\Call_to_Action(array('blocks_dir_path' => $blocks_dir_path, 'blocks_dir_uri' => $blocks_dir_uri, 'prefix' => $this->prefix, 'textdomain' => $this->textdomain));
+		$this->blocks['cla-blocks/heading-group'] = new blocks\heading_group\Heading_Group(array('blocks_dir_path' => $blocks_dir_path, 'blocks_dir_uri' => $blocks_dir_uri, 'prefix' => $this->prefix, 'textdomain' => $this->textdomain));
 		$this->blocks['cla-blocks/image-group'] = new blocks\image_group\Image_Group(array('blocks_dir_path' => $blocks_dir_path, 'blocks_dir_uri' => $blocks_dir_uri, 'prefix' => $this->prefix, 'textdomain' => $this->textdomain));
 		$this->blocks['cla-blocks/image-group-item'] = new blocks\image_group_item\Image_Group_Item(array('blocks_dir_path' => $blocks_dir_path, 'blocks_dir_uri' => $blocks_dir_uri, 'prefix' => $this->prefix, 'textdomain' => $this->textdomain));
 		$this->blocks['cla-blocks/sequence'] = new blocks\sequence\Sequence(array('blocks_dir_path' => $blocks_dir_path, 'blocks_dir_uri' => $blocks_dir_uri, 'prefix' => $this->prefix, 'textdomain' => $this->textdomain));
