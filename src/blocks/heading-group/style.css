@@ -1,0 +1,29 @@
+.cla-blocks-heading-group,
+.editor-styles-wrapper .cla-blocks-heading-group :where(.block-editor-block-list__layout) {
+	display: flex;
+}
+.editor-styles-wrapper .cla-blocks-heading-group .block-editor-inner-blocks,
+.editor-styles-wrapper .cla-blocks-heading-group .block-editor-inner-blocks > .block-editor-block-list__layout {
+	gap: inherit;
+}
+.cla-blocks-heading-group > :is(p, span),
+.editor-styles-wrapper .cla-blocks-heading-group :where(.block-editor-block-list__layout) > :is(p, span) {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: fit-content;
+}
+
+/* Variations: heading-group-row */
+.cla-blocks-heading-group-container--orientation-horizontal .cla-blocks-heading-group,
+.editor-styles-wrapper .cla-blocks-heading-group-container--orientation-horizontal .cla-blocks-heading-group :where(.block-editor-block-list__layout) {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* Variations: heading-group-stack */
+.cla-blocks-heading-group-container--orientation-vertical .cla-blocks-heading-group,
+.editor-styles-wrapper .cla-blocks-heading-group-container--orientation-vertical .cla-blocks-heading-group :where(.block-editor-block-list__layout) {
+	flex-direction: column;
+}

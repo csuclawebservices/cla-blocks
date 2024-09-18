@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cla-blocks/heading-group",
+	"version": "0.1.0",
+	"title": "Heading Group",
+	"category": "theme",
+	"icon": "heading",
+	"description": "A semantic heading wrapper for multiple phrases or sentences of text.",
+	"example": {},
+	"supports": {
+		"align": ["wide", "full"],
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"layout": {
+			"allowEditing": false
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"blockGap": true
+		},
+		"html": false
+	},
+	"textdomain": "cla-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"allowedBlocks": [
+		"core/paragraph"
+	],
+	"attributes": {
+		"level": {
+			"type": "number",
+			"default": 2
+		},
+		"tagName": {
+			"type": "string",
+			"default": "h2",
+			"selector": ".cla-blocks-heading-group"
+		},
+		"orientation": {
+			"type": "string",
+			"default": "horizontal"
+		}
+	}
+}
