@@ -9,9 +9,8 @@
 		"start": "wp-scripts start --webpack-copy-php --webpack-src-dir=src/blocks --output-path=includes/blocks"
 	},
 	"devDependencies": {
-		"@wordpress/babel-preset-default": "^8.2.0",
-		"@wordpress/dependency-extraction-webpack-plugin": "^6.2.0",
+		"@csuclawebservices/icons": "^1.6.0",
 		"@wordpress/icons": "^10.2.0",
-		"@wordpress/scripts": "^28.3.0"
+		"@wordpress/scripts": "^29.0.0"
 	}
 }
