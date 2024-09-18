@@ -1,58 +1,14 @@
 import React from 'react';
 import { BlockControls, RichText } from '@wordpress/block-editor';
-import { headingLevel1, headingLevel2, headingLevel3, headingLevel4, headingLevel5, headingLevel6 } from '@wordpress/icons';
-import { ToolbarGroup, MenuItemsChoice, ToolbarDropdownMenu } from '@wordpress/components';
-
-const icons = [
-	headingLevel1,
-	headingLevel2,
-	headingLevel3,
-	headingLevel4,
-	headingLevel5,
-	headingLevel6
-];
+import { ToolbarGroup } from '@wordpress/components';
+import { HeadingLevelDropdownMenu } from '../heading-level-dropdown-menu/heading-level-dropdown-menu.js';
 
 export function RichTextHeading({value = 'Heading', headingLevel = 2, className="", onChange = () => {}, onChangeHeadingLevel = () => {}}) {
 	return (
 		<>
 			<BlockControls>
 				<ToolbarGroup>
-					<ToolbarDropdownMenu icon={ icons[headingLevel - 1] } label="Change level">
-						{({onClose}) => (
-							<>
-								<MenuItemsChoice
-									value={headingLevel}
-									choices={ [
-										{
-											label: 'Heading 1',
-											value: 1
-										},
-										{
-											label: 'Heading 2',
-											value: 2
-										},
-										{
-											label: 'Heading 3',
-											value: 3
-										},
-										{
-											label: 'Heading 4',
-											value: 4
-										},
-										{
-											label: 'Heading 5',
-											value: 5
-										},
-										{
-											label: 'Heading 6',
-											value: 6
-										}
-									] }
-									onSelect={onChangeHeadingLevel}
-								/>
-							</>
-						)}
-					</ToolbarDropdownMenu>
+					<HeadingLevelDropdownMenu headingLevel={headingLevel} onChangeHeadingLevel={onChangeHeadingLevel} />
 				</ToolbarGroup>
 			</BlockControls>
 			<RichText
