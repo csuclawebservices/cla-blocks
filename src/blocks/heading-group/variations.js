@@ -5,7 +5,7 @@ const variations = [
 	{
 		name: 'heading-group-row',
 		title: _x('Heading Group', 'single horizontal line'),
-		description: __('Arrange blocks horizontally.'),
+		description: __('A semantic heading wrapper for multiple phrases or sentences of text that may be styled differently and arranged inline.'),
 		attributes: {
 			orientation: 'horizontal'
 		},
@@ -17,7 +17,7 @@ const variations = [
 	{
 		name: 'heading-group-stack',
 		title: __('Heading Group Stack'),
-		description: __('Arrange blocks vertically'),
+		description: __('A semantic heading wrapper for multiple phrases or sentences of text that may be styled differently and stacked on top of each other.'),
 		attributes: {
 			orientation: 'vertical'
 		},

@@ -210,6 +210,9 @@ class CLA_Blocks {
 		// Block Categories
 		add_filter('block_categories_all', array($this, 'wp_hook_block_categories_all'), 10, 2);
 
+		// Block Type Metadata Settings
+		add_filter('block_type_metadata_settings', array($this, 'wp_hook_block_type_metadata_settings'), 10, 2);
+
 		// Block Assets (front-end and back-end)
 		add_action('enqueue_block_assets', array($this, 'wp_hook_enqueue_block_assets'));
 
@@ -292,6 +295,24 @@ class CLA_Blocks {
 
 
 
+	public function wp_hook_block_type_metadata_settings($settings, $metadata) {
+		// cla-blocks/call-to-action
+		if ($settings['name'] === 'cla-blocks/call-to-action') {
+			$settings['example']['attributes']['mediaId'] = 999999999;
+			$settings['example']['attributes']['mediaUrl'] = $this->uri . 'assets/images/placeholder-image.jpg';
+		}
+
+		// cla-blocks/image-group-item
+		if ($settings['name'] === 'cla-blocks/image-group-item') {
+			$settings['attributes']['mediaId']['default'] = 999999999;
+			$settings['attributes']['mediaUrl']['default'] = $this->uri . 'assets/images/placeholder-image.jpg';
+		}
+
+		return $settings;
+	}
+
+
+
 	public function wp_hook_enqueue_block_assets() {
 		$this->enqueue_block_assets();
 	}
@@ -305,7 +326,7 @@ class CLA_Blocks {
 
 
 	/**
-	 * WP init
+	 * WP Hook: init
 	 * 
 	 * @since 0.1.0
 	 * 

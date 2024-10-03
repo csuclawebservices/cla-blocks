@@ -4,10 +4,32 @@
 	"name": "cla-blocks/accordion",
 	"version": "0.1.0",
 	"title": "Accordion",
-	"category": "theme",
+	"category": "cla",
 	"icon": "smiley",
-	"description": "A responsive accordion block container for Accordion Item blocks.",
-	"example": {},
+	"description": "A responsive accordion block.",
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "cla-blocks/accordion-item",
+				"attributes": {
+					"title": "Accordion Item One"
+				}
+			},
+			{
+				"name": "cla-blocks/accordion-item",
+				"attributes": {
+					"title": "Accordion Item Two"
+				}
+			},
+			{
+				"name": "cla-blocks/accordion-item",
+				"attributes": {
+					"title": "Accordion Item Three"
+				}
+			}
+		],
+		"viewportWidth": 768
+	},
 	"supports": {
 		"align": ["wide", "full"],
 		"color": {

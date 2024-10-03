@@ -4,10 +4,32 @@
 	"name": "cla-blocks/call-to-action",
 	"version": "0.2.0",
 	"title": "Call to Action",
-	"category": "theme",
+	"category": "cla",
 	"icon": "smiley",
 	"description": "A responsive Call to Action block that suppoorts an optional image and multiple block types for the content.",
-	"example": {},
+	"example": {
+		"attributes": {
+			"url": "#",
+			"urlLabel": "example"
+		},
+		"innerBlocks": [
+			{
+				"name": "core/heading",
+				"attributes": {
+					"fontSize": "300",
+					"level": 3,
+					"content": "Call to Action"
+				}
+			},
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"content": "The call to action description displays in this location"
+				}
+			}
+		],
+		"viewportWidth": 400
+	},
 	"supports": {
 		"align": ["wide", "full"],
 		"color": {

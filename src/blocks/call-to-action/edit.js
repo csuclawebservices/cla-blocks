@@ -21,7 +21,7 @@ const BlockEdit = (props) => {
 					<div className="cla-blocks-editor-block-link">
 						<p>The entire CTA will be clickable.</p>
 						<URLInput label="URL" value={attributes.url} onChange={(url, post) => setAttributes({url})}/>
-						<TextControl label="Label" help="This will be used for screen readers" value={attributes.urlLabel} onChange={(value) => setAttributes({urlLabel: value})} />
+						<TextControl label="Label" help="This will be used for screen readers to give context to where the button is navigating to, such as the name of the page." value={attributes.urlLabel} onChange={(value) => setAttributes({urlLabel: value})} />
 					</div>
 				</PanelBody>
 				<PanelBody title={__('Image', 'cla-blocks')} initialOpen={true}>

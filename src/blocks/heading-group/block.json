@@ -4,10 +4,26 @@
 	"name": "cla-blocks/heading-group",
 	"version": "0.1.0",
 	"title": "Heading Group",
-	"category": "theme",
+	"category": "cla",
 	"icon": "heading",
-	"description": "A semantic heading wrapper for multiple phrases or sentences of text.",
-	"example": {},
+	"description": "A semantic heading wrapper for multiple phrases or sentences of text that may be styled differently.",
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"content": "First Phrase"
+				}
+			},
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"content": "Second Phrase"
+				}
+			}
+		],
+		"viewportWidth": 768
+	},
 	"supports": {
 		"align": ["wide", "full"],
 		"color": {

@@ -4,10 +4,9 @@
 	"name": "cla-blocks/accordion-item",
 	"version": "0.2.0",
 	"title": "Accordion Item",
-	"category": "theme",
+	"category": "cla",
 	"icon": "smiley",
 	"description": "A responsive accordion item that allows for several blocks types as content to be used in the Accordion block.",
-	"example": {},
 	"supports": {
 		"align": false,
 		"color": {

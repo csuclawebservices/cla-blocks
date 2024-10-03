@@ -4,10 +4,12 @@
 	"name": "cla-blocks/image-group",
 	"version": "0.1.0",
 	"title": "Image Group",
-	"category": "theme",
+	"category": "cla",
 	"icon": "smiley",
-	"description": "A responsive image group block container for Image Group blocks.",
-	"example": {},
+	"description": "A responsive image group block with supplemental blocks allowed for each image.",
+	"example": {
+		"viewportWidth": 1200
+	},
 	"supports": {
 		"align": ["wide", "full"],
 		"html": false

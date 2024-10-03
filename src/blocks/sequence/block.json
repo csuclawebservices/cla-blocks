@@ -4,10 +4,23 @@
 	"name": "cla-blocks/sequence",
 	"version": "0.1.0",
 	"title": "Sequence",
-	"category": "theme",
+	"category": "cla",
 	"icon": "smiley",
 	"description": "A responsive sequence (timeline) block container for Sequence Item blocks.",
-	"example": {},
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "cla-blocks/sequence-item"
+			},
+			{
+				"name": "cla-blocks/sequence-item"
+			},
+			{
+				"name": "cla-blocks/sequence-item"
+			}
+		],
+		"viewportWidth": 400
+	},
 	"supports": {
 		"align": ["wide", "full"],
 		"html": false

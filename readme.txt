@@ -14,6 +14,9 @@ All blocks are created with only functionality in mind so that they can be used 
 
 == Changelog ==
 
+= 0.4.0 =
+
+
 = 0.3.0 =
 * Added: cla-blocks/heading-group block so that multiple core/paragraph blocks (with varying styles) can be used to create a single heading text
 * Added: A new HeadingLevelDropdownMenu React component used to add 1-line heading level dropdown menus to custom blocks

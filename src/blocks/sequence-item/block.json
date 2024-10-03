@@ -4,7 +4,7 @@
 	"name": "cla-blocks/sequence-item",
 	"version": "0.1.0",
 	"title": "Sequence Item",
-	"category": "theme",
+	"category": "cla",
 	"icon": "smiley",
 	"description": "A responsive sequence item to be used in the sequence block.",
 	"example": {},

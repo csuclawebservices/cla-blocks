@@ -4,10 +4,9 @@
 	"name": "cla-blocks/image-group-item",
 	"version": "0.1.0",
 	"title": "Image Group Item",
-	"category": "theme",
+	"category": "cla",
 	"icon": "smiley",
 	"description": "A responsive image with accompanying content to be used in the Image Group block.",
-	"example": {},
 	"supports": {
 		"align": false,
 		"color": {
