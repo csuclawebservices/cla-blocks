@@ -207,6 +207,9 @@ class CLA_Blocks {
 		// WP Init
 		add_action('init', array($this, 'wp_hook_init'));
 
+		// Block Categories
+		add_filter('block_categories_all', array($this, 'wp_hook_block_categories_all'), 10, 2);
+
 		// Block Assets (front-end and back-end)
 		add_action('enqueue_block_assets', array($this, 'wp_hook_enqueue_block_assets'));
 
