@@ -267,6 +267,28 @@ class CLA_Blocks {
 
 
 
+	/**
+	 * Filters the block categories to add or remove as needed
+	 * 
+	 * @since 0.4.0
+	 * 
+	 * @access public
+	 * 
+	 * @param array						$block_categories		The existing block categories
+	 * @param WP_Block_Editor_Context 	$block_editor_context	The current block editor context
+	 * @return array
+	 */
+	public function wp_hook_block_categories_all($block_categories, $block_editor_context) {
+		array_unshift($block_categories, array(
+			'slug' => 'cla',
+			'title' => 'College of Liberal Arts'
+		));
+
+		return $block_categories;
+	}
+
+
+
 	public function wp_hook_enqueue_block_assets() {
 		$this->enqueue_block_assets();
 	}
