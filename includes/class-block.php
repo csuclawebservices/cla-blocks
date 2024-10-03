@@ -170,7 +170,7 @@ abstract class Block implements interfaces\Block {
 	/**
 	 * Render the block for the front-end
 	 * 
-	 * This should be overridden by the block class
+	 * This should be overridden by the block class if the block is a dynamic block or using ServerSideRender
 	 */
 	public function render_block($attributes, $content, $block_instance) {
 		return '';
