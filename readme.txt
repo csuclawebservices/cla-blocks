@@ -15,7 +15,8 @@ All blocks are created with only functionality in mind so that they can be used 
 == Changelog ==
 
 = 0.4.0 =
-
+* Added: A new "cla" (labelled as "College of Liberal Arts") block category and placed it at the beginning of the list so those blocks show at the beginning of the block inserter.
+* Update: Blocks now have usable "example" properties in their block.json files so a useful block preview can be displayed.
 
 = 0.3.0 =
 * Added: cla-blocks/heading-group block so that multiple core/paragraph blocks (with varying styles) can be used to create a single heading text
